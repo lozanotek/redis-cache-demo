@@ -1,0 +1,29 @@
+﻿@using RedisDemo.Services
+@model IList<RedisDemo.Services.Message>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Messages</h2>
+
+        <a href="/home/deleteall" class="btn btn-danger">Delete All</a>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>Message</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var message in Model)
+                {
+                <tr>
+                    <td>@message.Value</td>
+                    <td>@message.CreatedDate</td>
+                    <td><a href="/home/delete/@message.Id" class="btn btn-danger">Delete</a></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
