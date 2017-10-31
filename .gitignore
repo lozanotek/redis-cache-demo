@@ -3,12 +3,12 @@
 
 #Visual Studio 2017 Files
 *.vs/*
+src/.vs/*
 
 # User-specific files
 *.suo
 *.user
 *.sln.docstates
-.vs/*
 
 # Build results
 [Dd]ebug/
