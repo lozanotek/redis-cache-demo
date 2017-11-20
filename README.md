@@ -1,3 +1,4 @@
+![alt text](http://lozanotek.com/images/logo.gif "Created by Lozanotek, Inc.")
 # Redis Cache Demo - Azure for ASP.NET Developers
 Repository the redis cache demo for the Azure for ASP.NET Developers presention.
 
